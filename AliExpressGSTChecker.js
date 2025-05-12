@@ -520,6 +520,7 @@
 
     function finishBatch() {
         logToScreen(`--- Finished Batch ${currentBatchIndex + 1} ---`);
+        logToScreen(`Running Total GST Error Value after Batch ${currentBatchIndex + 1}: ${formatCurrency(totalGstErrorValue)}`, "INFO");
         currentBatchIndex++; // Increment batch index for the next run
 
         const nextBatchButton = document.getElementById('gst-checker-batch-button');
